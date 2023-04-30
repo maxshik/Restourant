@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Spectral";
+  src: url(../Spectral/Spectral-LightItalic.ttf);
+}
+body {
+  background-color: #fff6ef;
+  font-family: "Spectral";
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  width: 40vw;
+  margin: 4vw;
+  text-align: center;
+}
+
+#price {
+  width: 20px;
+  height: 20px;
+}
+
+#current {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: -6.5px;
+  margin-left: 3px;
+}
+
+#photo {
+  border-radius: 50%;
+  width: 25vw;
+  height: 45vh;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+#name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#composition {
+  font-size: 20px;
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+}
+
+@media (max-width: 1500px) {
+  #photo {
+    height: 38vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  #photo {
+    height: 32vh;
+  }
+}
+
+@media (max-width: 950px) {
+  #photo {
+    height: 27vh;
+  }
+}
+
+@media (max-width: 750px) {
+  .products {
+    display: block;
+  }
+  .card {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  #photo {
+    width: 45vw;
+    height: 35vh;
+  }
+}
+
+@media (max-width:600px) {
+  #photo {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 500px) {
+  #photo {
+    height: 26vh;
+  }
+}
+
+@media (max-width: 400px) {
+  #photo {
+    height: 22vh;
+  }
+}
+
+@media (min-height: 870px) {
+  #photo {
+    width: 27vh;
+  }
+}
+
+@media (max-height: 750px) {
+  #composition {
+    font-size: 17px;
+  }
+}

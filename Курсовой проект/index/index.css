@@ -1,0 +1,135 @@
+body {
+  background-color: #fff6ef;
+}
+
+.header {
+  opacity: 0.85;
+}
+
+#main_background_photo {
+  margin-top: -20vh;
+  height: 101vh;
+  width: 100%;
+}
+
+@font-face {
+  font-family: "Spectral";
+  src: url(../Spectral/Spectral-LightItalic.ttf);
+}
+h1 {
+  font-family: "Spectral";
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Spectral";
+  font-size: 150%;
+  margin: 2%;
+  font-weight: normal;
+}
+
+@media (min-width: 1300px) {
+  p {
+    font-size: 200%;
+  }
+}
+.four {
+  margin-top: -1vh;
+}
+
+.information_about_cuisine img {
+  float: right;
+  width: 40vw;
+  height: 25%;
+  margin-bottom: 90px;
+  margin-left: 10vw;
+}
+
+#hyphenation {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .information_about_cuisine img {
+    float: none;
+    width: 60vw;
+    margin-left: 0;
+  }
+  #hyphenation {
+    display: inline;
+  }
+}
+@media (max-width: 700px) {
+  .information_about_cuisine img {
+    display: none;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+.w-100 {
+  height: 110vh;
+  width: 100vw;
+}
+
+.contacts {
+  font-family: "Times New Roman";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  font-size: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacts div {
+  z-index: -1;
+}
+
+.contacts img {
+  width: 20vh;
+  height: 20vh;
+}
+
+.contacts__bold__text {
+  font-weight: bold;
+}
+
+.contacts__bold__text a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3%;
+  background-color: #fff6ef;
+}
+
+@media (max-width: 900px) {
+  #main_background_photo {
+    height: 65vh;
+  }
+  .w-100 {
+    height: 50vh;
+    width: 100vw;
+  }
+}
+@media (max-width: 500px) {
+  .w-100 {
+    height: 35vh;
+  }
+  #main_background_photo {
+    height: 50vh;
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Naasz</title>
+    <link rel="icon" href="../main elements/img/n-letter.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+      <link href="../../main elements/burger.css" rel="stylesheet" media="(max-width: 1300px)">
+      <link rel="stylesheet" href="../main elements/header_footer.css">
+      <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="header">
+      <center>
+        <img src="../main elements/img/logo.svg" id="logo" />
+        <nav class="four">
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle" style="margin-top: -5vh">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a href="index.html" class="menu__item">Главная</a></li>
+              <li><a href="../about us/about.html" class="menu__item">О нас</a></li>
+              <li>
+                <a class="menu__item" style="cursor: pointer" href="../menu/menu_mobile.html">Меню<i class="fa fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="../menu/meat dishes/meat.html" class="elem_menu">Мясные блюда</a></li>
+                  <li><a href="../menu/soups/soups.html" class="elem_menu" style="margin-top: -20px">Супы</a></li>
+                  <li><a href="../menu/drinks/drinks.html" class="elem_menu" style="margin-top: -20px">Напитки</a></li>
+                  <li><a href="../menu/bakery/bakery.html" class="elem_menu" style="margin-top: -20px">Выпечка, десерты</a></li>
+                </ul>
+              </li>
+              <li><a href="https://eda.yandex.by/minsk?shippingType=delivery" class="menu__item">Доставка</a></li>
+              <li><a href="#contacts" class="menu__item">Контакты</a></li>
+              <li><a href="../table/table.html" class="menu__item">Бронь столика</a></li>
+            </ul>
+          </div>
+        </nav>
+      </center>
+    </div>
+
+    <img src="./img/main_background.jpg" id="main_background_photo" />
+    <div class="information_about_cuisine">
+      <br />
+      <h1>Белорусская кухня</h1>
+      <p>
+        <img src="./img/belorusian_dish.jpg" />
+        <span id="hyphenation"><br /></span>
+        Отличительной чертой белорусской кухни считается широкое использование
+        картофеля. Её отличает незначительное количество молочных блюд и
+        сладостей. Сладкие блюда заменяют традиционными напитками. В белорусской
+        кухне используют бобовые, овощи, колбасы, сало, грибы и ягоды. Мясные
+        блюда чаще всего готовят из свинины. Зачастую для приготовления блюд
+        применяются варка, тушение, запекание.
+      </p>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" style="z-index: -1">
+        <div class="carousel-item active">
+          <img src="./img/photo2.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/photo3.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item">
+          <img src="./img/main_background.jpg" class="d-block w-100" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+
+    <div class="contacts" id="contacts">
+      <div class="card">
+        <img src="./img/telephone.png" />
+        <div>
+          <span class="contacts__bold__text">Бронирование столиков, <br />
+            аренда зала</span>
+          <br /> <br />
+          +375 (25) 511-81-24 <br />
+          +375 (29) 982-05-23
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/schedule.png" />
+        <div>
+          <span class="contacts__bold__text">График работы <br />ресторана</span>
+          <br /> <br />
+          Пн - Пт: 8.00 - 22.00 <br />
+          Сб - Вс: 7.00 - 23.00 <br />
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/cooperation.png" />
+        <div>
+          <span class="contacts__bold__text">Сотрудничество, <br />реклама</span>
+          <br /> <br />
+          +375 (44) 982-02-55 <br />
+          naasz@gmail.com <br />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <b>© Naasz.by 2020 - 2023</b> <br />
+        <span id="rights">Все права защищены.</span>
+      </div>
+      <div style="margin-left: 5%">
+        Мы в соц. сетях:
+        <a href="https://instagram.com" target="_blank"><img src="../main elements/img/instagram.png"/></a>
+        <a href="https://telegram.com" target="_blank"><img src="../main elements/img/telegram.png"/></a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

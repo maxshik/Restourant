@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Spectral";
+    src: url(../Spectral/Spectral-LightItalic.ttf);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff6ef;
+    font-family: "Spectral";
+  }
+  
+  .inform {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: block;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-size: 23px;
+  }
+  
+  .card {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 3%;
+  }
+  
+  #door {
+    width: 40vw;
+    height: 50vh;
+  }
+  
+  #cooker {
+    width: 30vw;
+    height: 55vh;
+  }
+  
+  @media (max-width: 1500px) {
+    #cooker {
+      height: 45vh;
+    }
+    .inform {
+      font-size: 22px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .inform {
+      font-size: 20px;
+    }
+    #door {
+      width: 40vw;
+      height: 40vh;
+    }
+    #cooker {
+      height: 35vh;
+    }
+  }
+  @media (max-width: 800px) {
+    #cooker {
+      height: 30vh;
+    }
+    #door {
+      height: 30vh;
+    }
+  }
+  @media (max-width: 500px) {
+    #cooker, #door {
+      height: 20vh;
+      width: 40vw
+    }
+    
+  }
+  @media (max-width: 1000px) {
+    .inform {
+      display: block;
+    }
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпечка, десерты</title>
+    <link rel="icon" href="../../main elements/img/n-letter.png">
+    <link href="../../main elements/burger.css" rel="stylesheet" media="(max-width: 1300px)">
+    <link rel="stylesheet" href="../../main elements/header_footer.css">
+    <link rel="stylesheet" href="../food.css">
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+<body>
+  <div class="header">
+    <div class="header">
+      <center>
+        <img src="../../main elements/img/logo.svg" id="logo" />
+        <nav class="four" style="margin-top: 1.5vh">
+          <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a href="../../index/index.html" class="menu__item">Главная</a></li>
+              <li><a href="../about us/about.html" class="menu__item">О нас</a></li>
+              <li>
+                <a class="menu__item" style="cursor: pointer" href="../menu_mobile.html">Меню<i class="fa fa-angle-down"></i></a>
+                <ul class="submenu">
+                  <li><a href="meat.html" class="elem_menu">Мясные блюда</a></li>
+                  <li><a href="../../menu/soups/soups.html" class="elem_menu" style="margin-top: -20px">Супы</a></li>
+                  <li><a href="../../menu/drinks/drinks.html" class="elem_menu" style="margin-top: -20px">Напитки</a></li>
+                  <li><a href="../../menu/bakery/bakery.html" class="elem_menu" style="margin-top: -20px">Выпечка, десерты</a></li>
+                </ul>
+              </li>
+              <li><a href="https://eda.yandex.by/minsk?shippingType=delivery" class="menu__item">Доставка</a></li>
+              <li><a href="../../index/index.html#contacts" class="menu__item">Контакты</a></li>
+              <li><a href="../../table/table.html" class="menu__item">Бронь столика</a></li>
+            </ul>
+          </div>
+        </nav>
+      </center>
+    </div>
+
+    <div id="root"></div>
+
+    <footer>
+        <div>
+          </b>© Naasz.by 2020 - 2023</b> <br />
+          <span id="rights">Все права защищены.</span>
+        </div>
+        <div style="margin-left: 5%;">
+          Мы в соц. сетях: 
+          <a href="https://instagram.com" target="_blank"><img src="/main elements/img/instagram.png" /></a>
+          <a href="https://telegram.com" target="_blank"><img src="/main elements/img/telegram.png" /></a>
+        </div>
+    </footer>
+    
+    <script type="text/babel" src="../food.js"></script>
+</body>
+</html>
